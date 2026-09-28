@@ -1,0 +1,27 @@
+# API keys and secrets — never commit these
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated outputs — large files, reproducible on every run
+output/
+output/*.html
+
+# Generated spec files — runtime output, not source code
+specs/generated_*.json
+
+# Runtime state files
+data/request_history.json
+
+# Governance audit logs — runtime only, can be large
+logs/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

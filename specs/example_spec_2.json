@@ -1,0 +1,44 @@
+{
+  "title": "Monthly Claims Trend by Product — This Year",
+  "description": "How many claims were filed each month in 2026 and what is the total claim dollar amount, broken down by auto vs home insurance.",
+  "filters": {
+    "date_range": "this_year",
+    "state": "all",
+    "product": "all",
+    "channel": "all"
+  },
+  "charts": [
+    {
+      "chart_id": "chart_1",
+      "chart_type": "line",
+      "title": "Monthly Claim Count by Product",
+      "metric": "count_claims",
+      "grouping": "month_product",
+      "time_range": "this_year",
+      "sort_order": "asc"
+    },
+    {
+      "chart_id": "chart_2",
+      "chart_type": "bar",
+      "title": "Total Claim Amount by Product ($)",
+      "metric": "sum_claim_amount",
+      "grouping": "product",
+      "time_range": "this_year",
+      "sort_order": "desc"
+    },
+    {
+      "chart_id": "chart_3",
+      "chart_type": "bar",
+      "title": "Claim Count by Type",
+      "metric": "count_claims",
+      "grouping": "claim_type",
+      "time_range": "this_year",
+      "sort_order": "desc"
+    }
+  ],
+  "layout": [
+    { "chart_id": "chart_1", "row": 1, "col": 1 },
+    { "chart_id": "chart_2", "row": 2, "col": 1 },
+    { "chart_id": "chart_3", "row": 2, "col": 2 }
+  ]
+}

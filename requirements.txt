@@ -1,0 +1,8 @@
+# Install all dependencies with: pip install -r requirements.txt
+
+anthropic>=1.0.0       # Anthropic Claude API client
+streamlit>=1.28.0      # Web interface
+pandas>=2.0.0          # Data loading and aggregation
+plotly>=5.18.0         # Interactive charts
+python-dotenv>=1.0.0   # Loads API key from .env file
+numpy>=1.24.0          # Required by pandas

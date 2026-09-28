@@ -1,0 +1,54 @@
+{
+  "title": "Quote Conversion by State — Last 6 Months",
+  "description": "How many quotes were generated per state and what percentage converted to bound policies in the last 6 months.",
+  "filters": {
+    "date_range": "last_6_months",
+    "state": "all",
+    "product": "all",
+    "channel": "all"
+  },
+  "charts": [
+    {
+      "chart_id": "chart_1",
+      "chart_type": "bar",
+      "title": "Quote Volume by State",
+      "metric": "count_quotes",
+      "grouping": "state",
+      "time_range": "last_6_months",
+      "sort_order": "desc"
+    },
+    {
+      "chart_id": "chart_2",
+      "chart_type": "bar",
+      "title": "Conversion Rate by State (%)",
+      "metric": "conversion_rate",
+      "grouping": "state",
+      "time_range": "last_6_months",
+      "sort_order": "desc"
+    },
+    {
+      "chart_id": "chart_3",
+      "chart_type": "bar",
+      "title": "Quote Volume by Channel",
+      "metric": "count_quotes",
+      "grouping": "channel",
+      "time_range": "last_6_months",
+      "sort_order": "desc"
+    },
+    {
+      "chart_id": "chart_4",
+      "chart_type": "bar",
+      "title": "Conversion Rate by Channel (%)",
+      "metric": "conversion_rate",
+      "grouping": "channel",
+      "time_range": "last_6_months",
+      "sort_order": "desc"
+    }
+  ],
+  "layout": [
+    { "chart_id": "chart_1", "row": 1, "col": 1 },
+    { "chart_id": "chart_2", "row": 1, "col": 2 },
+    { "chart_id": "chart_3", "row": 2, "col": 1 },
+    { "chart_id": "chart_4", "row": 2, "col": 2 }
+  ]
+}

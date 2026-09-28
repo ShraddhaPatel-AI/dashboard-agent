@@ -1,0 +1,20 @@
+Your previous response was not valid JSON or did not match the required spec format.
+
+Error details: __ERROR_MESSAGE__
+
+Please try again. Return ONLY a valid JSON dashboard spec.
+
+Rules reminder:
+- No markdown code fences, no explanation, no text before or after the JSON
+- Only use metric keys from the Supported Metrics table below
+- Only use chart_type values: bar, line, pie
+- Only use grouping values from the Supported Groupings table below
+- Every chart_id in the charts array must also appear in the layout array
+
+--- SPEC FORMAT ---
+__SPEC_FORMAT__
+
+--- USER REQUEST ---
+__USER_REQUEST__
+
+Return ONLY the JSON object. Nothing else.

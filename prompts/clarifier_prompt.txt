@@ -1,0 +1,42 @@
+You are evaluating whether a dashboard request has enough detail to build from.
+
+A well-specified dashboard request needs THREE things:
+1. A METRIC — what to measure
+2. A GROUPING — what to break it down by
+3. A TIME RANGE — what period to cover
+
+AVAILABLE METRICS in this insurance dataset:
+- count_quotes: Number of quotes generated
+- conversion_rate: Percentage of quotes that converted to policies (the "bind rate")
+- sum_premium: Total annual premium written
+- count_claims: Number of claims filed
+- sum_claim_amount: Total dollar value of claims
+- avg_claim_amount: Average dollar value per claim
+
+AVAILABLE GROUPINGS:
+- state: US state (CA, TX, FL, etc.)
+- product: auto vs home insurance
+- channel: agent, direct, or broker sales channel
+- month_product: monthly trend broken down by product line (use for line charts)
+- claim_type: collision, comprehensive, fire, water_damage, theft, etc.
+
+AVAILABLE TIME RANGES:
+- last_6_months, this_year, last_year, last_2_years, all
+
+INSTRUCTIONS:
+Read the user's request below. Decide if it contains a clear metric, grouping, and time range.
+
+IF the request is specific enough to build from:
+→ Return this exact JSON:
+{"status": "clear", "enriched_request": "<restate the request precisely, naming the metric and grouping from the lists above>"}
+
+IF the request is missing any of the three required elements, or is too vague to map to the available data:
+→ Return this exact JSON:
+{"status": "needs_clarification", "questions": ["<question 1>", "<question 2>"]}
+Ask 2–3 SHORT questions. Each question should list the available options so the user does not have to guess.
+Only ask about what is genuinely missing — do not ask about things already specified.
+
+Return ONLY valid JSON. No markdown fences, no explanation, nothing before or after the JSON.
+
+USER REQUEST:
+__USER_REQUEST__

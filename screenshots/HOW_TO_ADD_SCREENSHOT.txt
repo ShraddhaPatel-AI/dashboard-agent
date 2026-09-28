@@ -1,0 +1,25 @@
+HOW TO ADD THE DEMO SCREENSHOT
+==============================
+
+1. Run the app:
+   python -m streamlit run app.py
+
+2. Type a request such as:
+   "Show me monthly claims trend by product this year"
+
+3. Wait for the dashboard to appear on the results screen.
+
+4. Take a screenshot showing:
+   - The full results screen
+   - The dashboard charts visible
+   - The confidence indicator ("Confidence: ●●● High")
+   - The sidebar with Example Requests visible
+
+5. Save the screenshot as:
+   dashboard_demo.png
+   in THIS folder (screenshots/)
+
+6. The README.md already references it at:
+   screenshots/dashboard_demo.png
+
+   No changes to README.md needed once the file is in place.

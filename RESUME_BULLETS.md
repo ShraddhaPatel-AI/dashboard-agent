@@ -6,7 +6,7 @@
 
 **AI Dashboard Creation Agent** | Python, Streamlit, Anthropic Claude API
 
-Built an AI agent that converts plain-English business requests into interactive data dashboards using RAG, agentic workflows, and a governance validation layer — no SQL or coding required from the end user.
+Built an AI agent that converts plain-English business requests into interactive data dashboards using RAG, agentic workflows, and a governance validation layer. No SQL or coding required from the end user.
 
 ---
 

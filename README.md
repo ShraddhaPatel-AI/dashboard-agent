@@ -146,6 +146,3 @@ My governance background shaped the design more than I expected. The audit log, 
 
 The next version of this project connects to a live metadata catalog via MCP (Model Context Protocol), so the data dictionary is always current. Instead of a static markdown file, the agent would query the catalog at runtime to learn what tables and columns exist — making it useful across any dataset, not just the insurance data it was built with.
 
----
-
-*Built as a career transition project — from data governance and insurance into AI/ML product and platform roles.*
